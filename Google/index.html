@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top:250px ;
+        }
+        .search{
+            padding-top: 30px;
+        }
+        .search input{
+            width: 450px;
+            height: 43px;
+            border: none;
+            padding-left: 50px;
+            padding-right: 100px;
+            font-size: 20px;
+            background-color: #202124;
+            color: white;
+            outline: 1px solid #939498;
+            border-radius: 25px;
+            margin-left: 50px;
+        }
+        .search input:hover{
+            background-color: #303134;
+            outline: none;
+        }
+        .icons{
+            color: #939498;
+            position: relative;
+            left: 90px;
+        }
+        .iconss{
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+            right: 90px;
+        }
+        .iconsss{
+            cursor: pointer;
+            position: relative;
+            top: 7px;
+            right: 85px;
+        }
+        @media (max-width:707px)
+        {
+            .search input{
+                width: 300px;
+            }
+        }
+        @media (max-width:608px)
+        {
+            .search input{
+                width: 200px;
+            }
+            .image img{
+                height: 60px;
+            }
+            .iconss{
+                visibility: hidden;
+            }
+        }
+        @media (max-width:510px)
+        {
+            .search input{
+                width: 150px;
+            }
+        }
+        @media (max-width:458px)
+        {
+            .search input{
+                width: 120px;
+            }
+        }
+        @media (max-width:430px)
+        {
+            .search input{
+                width: 80px;
+            }
+        }
+        @media (max-width:390px)
+        {
+            .search input{
+                width: 60px;
+            }
+        }
+        @media (max-width:368px)
+        {
+            .search input{
+                width: 10px;
+            }
+        }
+
+        .buttons{
+            padding: 30px;
+        }
+        .buttons button{
+            
+            height: 36px;
+            width: 108px;
+            background-color: #303134;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover{
+            border: 0.5px solid rgb(114, 110, 110);
+        }
+        .buttons button:nth-child(2)
+        {
+            height: 36px;
+            width: 130px;
+            margin-left: 10px;
+            background-color: #303134;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .text span:nth-child(1){
+            color: rgb(191, 188, 188);
+            font-size: 15px;
+        }
+        .links{
+            color: #99C3FF;
+            cursor: pointer;
+            margin: 0px 3px;
+            font-size: 15px;
+        }
+        .links:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body style="background-color: #202124;">
+
+
+    <div class="container">
+        <div class="image">
+            <img src="logo.jpg" alt="Google Image" height="92px">
+        </div>
+        <div class="search">
+            <form action="https://www.google.com/search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass icons"></i>
+                    <input type="text" name="q">
+                <img src="voice-removebg-preview.png" alt="Voice search" height="33" class="iconss">
+                <img src="lens.png" alt="Lens Image" height="28" class="iconsss">
+            </form>
+        </div>
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="text">
+            <span>Google Offered in: </span>&nbsp;
+            <span class="links">   سنڌي</span>
+            <span class="links">پښتو</span>
+            <span class="links">اردو</span>
+        </div>
+    </div>
+</body>
+</html>
